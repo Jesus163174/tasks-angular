@@ -1,0 +1,30 @@
+[debug] [2019-12-12T20:28:24.611Z] ----------------------------------------------------------------------
+[debug] [2019-12-12T20:28:24.612Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jesus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-12-12T20:28:24.613Z] CLI Version:   7.10.0
+[debug] [2019-12-12T20:28:24.613Z] Platform:      win32
+[debug] [2019-12-12T20:28:24.613Z] Node Version:  v12.13.0
+[debug] [2019-12-12T20:28:24.613Z] Time:          Thu Dec 12 2019 14:28:24 GMT-0600 (GMT-06:00)
+[debug] [2019-12-12T20:28:24.614Z] ----------------------------------------------------------------------
+[debug] [2019-12-12T20:28:24.614Z] 
+[debug] [2019-12-12T20:28:24.619Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-12T20:28:24.619Z] > authorizing via signed-in user
+[debug] [2019-12-12T20:28:24.619Z] [iam] checking project tasks-191d6 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-12-12T20:28:24.621Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/tasks-191d6:testIamPermissions  
+
+[debug] [2019-12-12T20:28:25.111Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-12T20:28:25.116Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/tasks-191d6  
+ 
+[debug] [2019-12-12T20:28:25.443Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'tasks-191d6'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-12-12T20:28:25.474Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/tasks-191d6/versions  
+
+[debug] [2019-12-12T20:28:26.075Z] <<< HTTP RESPONSE 200
+[info] i  hosting[tasks-191d6]: beginning deploy...
+[info] i  hosting[tasks-191d6]: found 167 files in dist/
+[debug] [2019-12-12T20:28:26.285Z] [hosting] hash cache [ZGlzdA] stored for 167 files
+[debug] [2019-12-12T20:28:26.286Z] [hosting][hash queue][FINAL]
+[debug] [2019-12-12T20:28:26.286Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/tasks-191d6/versions/60eaf51c714ef52d:populateFiles  
+ <request body omitted>
